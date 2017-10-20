@@ -1,0 +1,1512 @@
+@import url("http://a.espncdn.com/combiner/c?v=11&css=fonts/bentonsans.css");
+@import url("http://assets.espn.go.com/prod/styles/pagetype/otl/tungsten/tungsten.css");
+
+/******************************
+    HPC Longform
+******************************/
+
+/* OVERRIDES */
+
+#toolbar {
+    background: #f6f6f6;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toolbar>h1.logo a.espn {
+    background: url('http://a.espncdn.com/prod/styles/pagetype/otl/20170207_livinglegends/images/espn_logo-black-2x.png');
+    background-repeat: no-repeat;
+    background-size: 79px 21px;
+}
+
+#toolbar>h1.logo {
+    height: 21px;
+    padding: 0 20px;
+    text-align: left;
+    margin: 0;
+    width: 78px;
+}
+
+#toolbar ul.mod-page-actions, #toolbar>h1.logo a.grantland {
+    display: inline-block !important;
+}
+
+.jumper {
+    display: none;
+}
+
+.mod-page-actions li.social.fb-comments,
+.mod-page-actions li.espn-email {
+    display: none;
+}
+
+.mod-page-actions li a .sprite-page-actions {
+    background-image: url(http://a1.espncdn.com/prod/styles/pagetype/otl/20170207_livinglegends/images/social-icons-redesign3_gray.png);
+    width: 38px;
+}
+
+.mod-page-actions li a .sprite-page-actions.facebook {
+    background-position: 0 10px;
+}
+
+.mod-page-actions li a .sprite-page-actions.twitter {
+    background-position: -40px 10px;
+}
+
+.mod-page-actions li a .sprite-page-actions.email {
+    background-position: -124px 10px;
+}
+
+.header__logo {
+    font-size: inherit;
+    line-height: inherit;
+    height: 21px;
+    margin-left: 20px;
+    width: 79px;
+}
+
+.mod-page-actions {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: auto;
+    margin-right: 10px;
+    position: relative;
+    right: auto;
+    top: auto;
+}
+
+.mod-page-actions li {
+    height: 52px;
+    margin: 0;
+}
+
+.container {
+    background: none;
+    padding: 0;
+    width: 100%;
+}
+
+.container p {
+    margin: 0;
+    max-width: none !important;
+    padding: 0;
+}
+
+button,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+button:hover,
+select:hover {
+    cursor: pointer;
+}
+
+/* END OVERRIDES */
+
+.hpc {
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.hpc__hero,
+.hpc__section {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+
+.hpc__expand-content {
+    font-size: 14px;
+    margin: 10px 0 0;
+    padding: 6px 20px 7px;
+    position: relative;
+    z-index: 1;
+}
+
+.hpc__hero {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+
+.hpc__hero img {
+    width: 100%;
+}
+
+.hpc__section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hpc__section--sm {
+    width: 600px;
+}
+
+.hpc__section--lg {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    padding: 5px 30px 0;
+}
+
+#hpc__map {
+    margin: 40px 0 0 38px;
+    position: relative;
+    opacity: 0;
+}
+
+#hpc__map.zoomIn {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-delay: 0.3s; 
+    animation-delay: 0.3s;
+    opacity: 1;
+}
+
+#hpc__map.slide {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-delay: 0.1s; 
+    animation-delay: 0.1s;
+}
+
+.hpc__map__key {
+    display: inline-block;
+    margin: 0 auto -30px;
+    z-index: 1;
+    position: relative;
+}
+
+.hpc__map__key__type {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.hpc__map__key__type:last-child {
+    margin-right: 0;
+}
+
+.hpc__map__key__type > span:before {
+    background: transparent;
+    border-radius: 50%;
+    content: '';
+    height: 16px;
+    left: -22px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 16px;
+}
+
+.hpc__map__key__type--football > span:before {
+    background: #0678ab;
+}
+
+.hpc__map__key__type--basketball > span:before {
+    background: #29a8df;
+}
+
+.hpc__map__key__type--governor > span:before {
+    background: #666666;
+}
+
+.hpc__map__key__type--other > span:before {
+    background: #c6c5c4;
+}
+
+.hpc__map__row {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.hpc__map__cell {
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    height: 60px;
+    margin: 0 5px 5px 0;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transform: perspective(1px) translateZ(0); 
+    transform: perspective(1px) translateZ(0);
+    width: 60px;
+}
+
+.hpc__map__cell:hover {
+    cursor: pointer;
+}
+
+.hpc__map__cell:before {
+    border-radius: 12px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: #fbad17;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.hpc__map__cell:not(.hpc__map__cell--blank):hover:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 4px;
+}
+
+.hpc__map__cell.active:before {
+    border-width: 4px;
+}
+
+.hpc__map__cell--football {
+    background: #0678ab;
+}
+
+.hpc__map__cell--basketball {
+    background: #29a8df;
+}
+
+.hpc__map__cell--gov {
+    background: #666666;
+}
+
+.hpc__map__cell--other {
+    background: #c6c5c4;
+}
+
+.hpc__map__cell--blank {
+    background: #ffffff;
+}
+
+.hpc__map__cell--blank:hover {
+    cursor: default;
+}
+
+.hpc__map__cell span {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hpc__map-detail {
+    padding: 0;
+    position: relative;
+    background: #fafafa;
+    border: 0;
+    border-radius: 8px;
+    text-align: left;
+    width: 0;
+}
+
+#hpc__map-detail:after, 
+#hpc__map-detail:before {
+    opacity: 0;
+    right: 100%;
+    top: 45px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#hpc__map-detail:after {
+    border-color: rgba(250, 250, 250, 0);
+    border-right-color: #fafafa;
+    border-width: 20px;
+    margin-top: -20px;
+}
+#hpc__map-detail:before {
+    border-color: rgba(233, 232, 232, 0);
+    border-right-color: #e9e8e8;
+    border-width: 21px;
+    margin-top: -21px;
+}
+
+#hpc__map-detail.activate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 0.5s; 
+    animation-delay: 0.5s;
+    border: 1px solid #e9e8e8;
+    margin: 0 0 0 10px;
+    min-width: 390px;
+    padding: 25px;
+    width: 390px;
+}
+
+#hpc__map-detail.activate:after, 
+#hpc__map-detail.activate:before  {
+    opacity: 1;
+}
+
+.hpc__map-detail__state,
+.hpc__map-detail__select {
+    font-family: 'BentonSansMedium', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hpc__map-detail__state,
+.hpc__map-detail__select__wrapper {
+    margin: 0 0 20px;
+}
+
+#hpc__map-detail .hpc__bar-chart__detail {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hpc__bar-chart--sort .hpc__bar-chart__detail {
+    margin: 0 0 0;
+}
+
+.hpc__bar-chart--sort .hpc__bar-chart__salary,
+.hpc__salaries-differential__table__cell .hpc__bar-chart__salary,
+.hpc__dead-money-charts .hpc__bar-chart__salary {
+    line-height: 16px;
+}
+
+.hpc__bar-chart--sort .hpc__bar-chart__bar,
+.hpc__salaries-differential__table__cell .hpc__bar-chart__bar,
+.hpc__dead-money-charts .hpc__bar-chart__bar {
+    margin: 2px 0 0;
+}
+
+#hpc__map-detail .hpc__bar-chart__bar {
+    height: 21px;
+    margin: 0 10px 0 0px;
+}
+
+#hpc__map-detail .hpc__bar-chart__salary {
+    width: 100px;
+}
+
+.hpc__map-detail__graph.fade {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    min-height: 212px;
+    background: #ffffff;
+    padding: 12px;
+}
+
+.hpc__map-detail__graph__title {
+    font-family: 'BentonSansMedium', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.hpc__map-detail__graph__blurb {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.hpc__map-detail__graph__chart img {
+    width: 100%;
+    padding-bottom: 10px;
+    background: #fff;
+}
+
+.hpc__map-detail__stats {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+    margin: 20px 0 0;
+}
+
+.hpc__map-detail__stats__detail {
+    color: #0081ad;
+    font-family: 'HCo Tungsten', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    letter-spacing: 0.025em;
+}
+
+.hpc__map-detail__stats__detail > span {
+    color: #000000;
+    display: block;
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.hpc__map-detail__select__wrapper {
+    display: none;
+    position: relative;
+}
+
+.hpc__map-detail__select__wrapper .arrow-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000000;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; 
+}
+
+#hpc__map-dropdown {
+    display: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 50px auto 0;
+    position: relative;
+    text-align: left;
+    width: 230px;
+    z-index: 1;
+}
+
+#hpc__map-dropdown:hover {
+    cursor: pointer;
+}
+
+#hpc__map-dropdown:after {
+    background: url('http://www.espn.com/prod/styles/pagetype/otl/20170330_highestpaidcoaches/images/assets/arrow_dropdown.png') no-repeat;
+    background-size: 14px 8px;
+    content: '';
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 14px;
+}
+
+#hpc__map-dropdown > span {
+    padding: 3px 10px;
+    text-transform: none;
+    width: 100%;
+}
+
+#hpc__map-dropdown.hover:hover .hpc__map-dropdown__list {
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    max-height: 200px;
+    overflow: auto;
+}
+
+#hpc__map-dropdown:not('.hover') .hpc__map-dropdown__list {
+    max-height: 0;
+}
+
+.hpc__map-dropdown__list {
+    background: #ffffff;
+    border-bottom: 1px solid transparent;
+    max-height: 0;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    transition: max-height 0.2s ease;
+    overflow: hidden;
+    width: 100%;
+}
+
+.hpc__map-dropdown__list li {
+    border-bottom: 1px solid #e0e0e0;
+    color: #000;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.hpc__map-dropdown__list li:last-child {
+    border-bottom: none;
+}
+
+.hpc__map-dropdown__list li:hover {
+    background: #e8e8e8;
+}
+
+.hpc__header {
+    color: #fd751a;
+    font-family: 'BentonSansMedium', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.hpc__header > span {
+    display: block;
+}
+
+.hpc__header--h1 {
+    color: #000000;
+    font-family: 'HCo Tungsten', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 30px 0 6px;
+    text-transform: uppercase;
+}
+
+.hpc__header--h2 {
+    font-size: 24px;
+    padding: 0 0 4px;
+}
+
+.hpc__header--h3 {
+    font-size: 18px;
+    padding: 0 0 4px;
+}
+
+.hpc__text {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.hpc__text span {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    padding: 20px 0 0;
+}
+
+.hpc__spacer {
+    background: #000000;
+    height: 10px;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.hpc__sorting {
+    font-size: 14px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.hpc__sorting,
+.hpc__sorting__wrapper {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.hpc__sorting__label {
+    font-size: 16px;
+    margin: 0 8px 0;
+    white-space: nowrap;
+}
+
+.hpc__sorting__btn {
+    font-size: 14px;
+    margin: 4px 4px;
+    padding: 6px 15px 6px 30px;
+    position: relative;
+}
+
+.hpc__sorting__btn.active.ascending:before {
+    background: url("http://www.espn.com/prod/styles/pagetype/otl/20170330_highestpaidcoaches/images/assets/arrow_up.png") no-repeat;
+    background-size: 9px 12px;
+    content: '';
+    left: 15px;
+    height: 12px;
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+}
+
+.hpc__sorting__btn.active.descending:before {
+    background: url("http://www.espn.com/prod/styles/pagetype/otl/20170330_highestpaidcoaches/images/assets/arrow_up.png") no-repeat;
+    background-size: 9px 12px;
+    content: '';
+    left: 15px;
+    height: 12px;
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%) rotate(-180deg);
+    width: 9px;
+}
+
+.hpc__sorting__btn:before {
+    background: url("http://www.espn.com/prod/styles/pagetype/otl/20170330_highestpaidcoaches/images/assets/updown.png") no-repeat;
+    background-size: 9px 12px;
+    content: '';
+    left: 15px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+}
+
+.hpc__bar-chart__container {
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.hpc__bar-chart__container:after {
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 101%); 
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 20%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 101%); 
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 20%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 101%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 300px;
+    opacity: 1;
+    width: 100%;
+    transition: opacity 1s ease;
+}
+
+.hpc__bar-chart--sort.active .hpc__bar-chart__container {
+    max-height: 3000px;
+}
+
+.hpc__bar-chart--sort.active .hpc__bar-chart__container:after {
+    opacity: 0;
+}
+
+.hpc__bar-chart__wrapper {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.hpc__bar-chart__headshot {
+    background: #cccccc;
+    border-radius: 50%;
+    height: 32px;
+    margin: 0 8px 0 0;
+    position: relative;
+    width: 32px;
+}
+
+.hpc__bar-chart__headshot img {
+    border: 0;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.hpc__bar-chart__content {
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.hpc__bar-chart__name {
+    line-height: 16px;
+    text-align: left;
+}
+
+.hpc__bar-chart__name > span {
+    text-transform: none;
+}
+
+.hpc__bar-chart__salary {
+    font-size: 16px;
+}
+
+.hpc__bar-chart__detail {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hpc__bar-chart__bar {
+    background: #efefef;
+    display: block;
+    height: 16px;
+    margin: -2px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.hpc__bar-chart__animate {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: barChartAnimation;
+    animation-name: barChartAnimation;
+}
+
+.hpc__compare-salary {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 18px 0 0;
+}
+
+.hpc__compare-salary img {
+    width: 100%;
+}
+
+.hpc__compare-salary__circle {
+    background: #0081ad;
+    border-radius: 50%;
+    color: #ffffff;
+    margin: 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+.hpc__compare-salary__circle--lg {
+    height: 213px;
+    width: 213px;
+}
+
+.hpc__compare-salary__circle--sm {
+    height: 200px;
+    width: 200px;
+}
+
+.hpc__compare-salary__circle__content {
+    font-family: 'HCo Tungsten', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+    left: 50%;
+    line-height: 1.2;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    letter-spacing: 0.025em;
+}
+
+.hpc__compare-salary__circle__content > span {
+    display: block;
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif; 
+    font-size: 14px;
+    margin: -3px 0 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.hpc__dead-money-graph {
+    height: 342px;
+    margin: 40px 0 0;
+    max-width: 600px;
+}
+
+.hpc__dead-money-graph img {
+    width: 100%;
+}
+
+.hpc__tabs__nav {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.hpc__tabs__nav button {
+    border-color: #ffffff;
+    font-size: 14px;
+    margin: 10px 0 0;
+    padding: 6px 20px 7px;
+    position: relative;
+    z-index: 1;
+}
+
+.hpc__tabs__nav button.active {
+    border-color: #e0e0e0;
+}
+
+.hpc__tabs__nav button + button {
+    margin-left: 8px;
+}
+
+.hpc__tabs__wrapper.active {
+    display: block;
+}
+
+.hpc__tabs__wrapper {
+    display: none;
+}
+
+.hpc__salaries-differential {
+    margin: 10px 0 0;
+    text-align: left;
+}
+
+.hpc__salaries-differential__table {
+    border-top: 1px solid #000000;
+}
+
+.hpc__salaries-differential .hpc__bar-chart__wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.hpc__salaries-differential__title {
+    border-bottom: 1px solid #000000;
+    font-family: 'BentonSansMedium', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.hpc__salaries-differential__table__row {
+    border-bottom: 1px solid #000000;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hpc__salaries-differential__table__cell {
+    padding: 15px 0 15px 10px;
+    width: 100%;
+}
+
+.hpc__salaries-differential__table__cell:first-child {
+    border-right: 1px solid #000000;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 65px;
+}
+
+.hpc__salaries-differential__table__cell > span {
+    font-size: 16px;
+    left: 50%;
+    line-height: 1.2;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hpc__dead-money-charts {
+    margin: 20px 0 0;
+}
+
+.hpc__dead-money-charts .hpc__spacer {
+    margin: 20px 0 10px;
+}
+
+.hpc__dead-money-charts .hpc__spacer--sm {
+    background: #999999;
+    height: 1px;
+}
+
+.hpc__assistance {
+    margin: 18px 0 0;
+}
+
+.hpc__assistance__wrapper {
+    display: block;
+    padding: 19px 0;
+}
+
+.hpc__assistance__wrapper:not(:last-child) {
+    border-bottom: 1px solid #d0d2d3;
+}
+
+.hpc__assistance__wrapper:last-child {
+    padding-bottom: 0;
+}
+
+.hpc__assistance__wrapper span {
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 0 0 -13px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.hpc__assistance__wrapper img {
+    width: 100%;
+}
+
+/* BPs */
+/* SCREEN LG */
+@media only screen and (max-width: 1279px) {
+    .header__logo {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hpc__header--h1 {
+        padding: 35px 0 4px;
+    }
+
+    .hpc__map,
+    .hpc__map-detail {
+        margin: 0 auto;
+    }
+
+    .hpc__map-detail { 
+        background: #ffffff;
+        border: 0;
+        padding: 0;
+    }
+
+    .hpc__map-detail:before,
+    .hpc__map-detail:after,
+    .hpc__map-detail__state,
+    .hpc__map-detail__nav {
+        display: none;
+    }
+
+    .hpc__map-detail__select__wrapper {
+        background: #ffffff;
+        border-bottom: 2px solid #000000;
+        display: block;
+    }
+
+    .hpc__map-detail__select__wrapper select {
+        border: 0;
+        width: 100%;
+    }
+
+    .hpc__section--sm .hpc__header--h2 {
+        font-size: 22px;
+    }
+
+    .hpc__header--h3 + .hpc__text {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .hpc__dead-money-graph {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1279px) {
+    .hpc__map__cell {
+        border-radius: 8px;
+        height: 40px;
+        font-size: 18px;
+        width: 40px;
+    }
+
+    #hpc__map-detail.activate {
+        min-width: 320px;
+        width: 320px;
+    }
+
+    .hpc__map__cell:before {
+        border-radius: 6px;
+    }
+}
+
+/* SCREEN MD - SM */
+@media only screen and (max-width: 1023px) {
+    .hpc__section--lg {
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hpc__map-detail__graph.fade {
+        padding: 0;
+    }
+
+    #hpc__map.slide {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+    
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+   
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    #hpc__map{
+        margin: 0 auto;
+    }
+
+    #hpc__map-dropdown {
+        display: flex;
+    }
+
+    #hpc__map-detail,
+    #hpc__map-detail.activate {
+        background: #ffffff;
+        border: 0;
+        margin: 0 auto;
+        min-width: 600px;
+        width: 600px;
+    }
+
+    #hpc__map-detail:before,
+    #hpc__map-detail:after {
+        display: none;
+    }
+
+    #hpc__map-dropdown + #hpc__map-detail.activate {
+        margin: 0 auto;
+        min-width: auto;
+    }
+
+    .hpc__map__cell {
+        border-radius: 10px;
+        font-size: 18px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .hpc__map__cell:before {
+        border-radius: 8px;
+    }
+}
+
+/* SCREEN XS */
+@media only screen and (max-width: 767px) {
+    #hpc__map,
+    #hpc__map.zoomIn,
+    .hpc__hero,
+    .hpc__section {
+         -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+    
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+   
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        opacity: 1;
+    }
+
+    #hpc__map:before {
+        background: transparent;
+        content: '';
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hpc__header--h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hpc__text {
+        font-size: 14px;
+    }
+
+    .hpc__section--sm {
+        padding: 0 30px;
+        width: auto;
+    }
+
+    .hpc__spacer {
+        margin: 30px 0;
+    }
+
+    .hpc__section--sm .hpc__header--h2 {
+        font-size: 20px;
+    }
+
+    #hpc__map-dropdown {
+        margin: 30px auto 20px;
+    }
+
+    #hpc__map-detail, 
+    #hpc__map-detail.activate {
+        padding: 0;
+        width: 100%;
+    }
+
+    #hpc__map-detail .hpc__bar-chart__wrapper {
+        margin: 0;
+    }
+
+    #hpc__map-detail .hpc__bar-chart__wrapper {
+        font-size: 12px;
+    }
+
+    .hpc__bar-chart__salary {
+        font-size: 14px;
+    }
+
+    .hpc__map-detail__stats__detail {
+        width: 100%;
+    }
+
+    .hpc__map-detail__stats__detail {
+        font-size: 34px;
+    }
+
+    .hpc__map-detail__stats__detail > span {
+        font-size: 14px;
+    }
+
+    .hpc__sorting .hpc__sorting__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .hpc__sorting, 
+    .hpc__sorting__wrapper {
+        align-items: baseline;
+    }
+
+    .hpc__sorting .hpc__sorting__select__wrapper {
+        margin: 8px 0 0;
+    }
+
+    .hpc__header--h3 + .hpc__text {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    
+    .hpc__bar-chart--sort .hpc__bar-chart__headshot,
+    .hpc__bar-chart--sort .hpc__salaries-differential__table__cell:first-child,
+    .hpc__salaries-differential .hpc__bar-chart__headshot,
+    .hpc__salaries-differential .hpc__salaries-differential__table__cell:first-child {
+        display: none;
+    }
+
+    .hpc__bar-chart--sort .hpc__salaries-differential__table__cell,
+    .hpc__salaries-differential .hpc__salaries-differential__table__cell {
+        padding: 15px 0;
+    }
+
+    .hpc__bar-chart--sort .hpc__bar-chart__salary,
+    .hpc__salaries-differential .hpc__bar-chart__salary {
+        width: auto;
+    }
+
+    .hpc__sorting__btn {
+        padding: 6px 12px 6px 27px
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 715px) {
+    .hpc__map__cell {
+        border-radius: 8px;
+        height: 30px;
+        width: 30px;
+        margin: 0 2px 2px 0;
+        font-size: 12px;
+    }  
+
+    .hpc__map__cell:not(.hpc__map__cell--blank):hover:before,
+    .hpc__map__cell:not(.hpc__map__cell--blank).active:before {
+        border-radius: 6px;
+        border-width: 2px;
+    }
+
+    .hpc__map__key {
+        margin: 0 0 5px;
+    }
+
+    .hpc__map__key__type {
+        font-size: 12px;
+        margin: 0 15px;
+    }
+
+    .hpc__map__key__type > span:before {
+        height: 12px;
+        left: -16px;
+        width: 12px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hpc__compare-salary {
+        flex-direction: column;
+    }
+
+    .hpc__compare-salary__circle {
+        margin: 10px 0;
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 500px) {
+    .hpc__map__cell {
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        margin: 0 2px 2px 0;
+        font-size: 10px;
+    }  
+
+    .hpc__map-detail__stats {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .hpc__header--h1 {
+        font-size: 45px;
+        line-height: 40px;
+        padding: 25px 0 4px;
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 420px) {
+    .hpc__map__cell {
+        border-radius: 5px;
+        height: 25px;
+        width: 25px;
+        margin: 0 2px 2px 0;
+        font-size: 10px;
+    }  
+
+    .hpc__map__cell:not(.hpc__map__cell--blank):hover:before,
+    .hpc__map__cell:not(.hpc__map__cell--blank).active:before {
+        border-radius: 4px;
+    }
+    
+    .hpc__compare-salary__wrapper span {
+        font-size: 14px;
+        margin: 0 0 -13px;
+        padding-left: 3px;
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 375px) {
+    .container .hpc__header--h1 {
+        font-size: 40px;
+        line-height: 35px;
+        padding: 25px 0 8px;
+    }
+
+    .hpc__sorting__btn {
+        margin: 4px 2px;
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 360px) {
+    .hpc__map__cell {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* SCREEN - XS */
+@media only screen and (max-width: 320px) {
+    .container .hpc__header--h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+}
+
+/* Animations */
+@-webkit-keyframes barChartAnimation {
+    from { 
+        width: 0; 
+    }
+}
+
+@keyframes barChartAnimation {
+    from { 
+        width: 0; 
+    }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(29%, 0, 0);
+    transform: translate3d(29%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(29%, 0, 0);
+    transform: translate3d(29%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+  }
+}
+
+.hpc__illustrations-by {
+    color: #000000;
+    font-family: 'BentonSans', -apple-system, "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 14px;
+}
+
+.ai2html {
+    height: 415px;
+    position: relative;
+    width: 100%;
+}
+
+.ai2html .g-artboard {
+    transform: scale(0.52);
+    transform-origin: top left;
+}
